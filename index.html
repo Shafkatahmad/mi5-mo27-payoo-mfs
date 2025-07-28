@@ -25,6 +25,7 @@
                   <fieldset class="fieldset">
                     <label class="label text-black">Phone Number</label>
                     <input
+                      id="phone-number"
                       type="number"
                       class="input border-2 border-gray-100 text-black"
                       placeholder="Your Phone Number"
@@ -35,8 +36,13 @@
                       class="input border-2 border-gray-100 text-black"
                       placeholder="Your Pin"
                     />
-                    <div><a class="link link-hover">Forgot password?</a></div>
-                    <button class="btn btn-neutral mt-4 text-black">
+                    <div>
+                      <a class="link link-hover">Forgot password?</a>
+                    </div>
+                    <button
+                      id="button-login"
+                      class="btn btn-neutral mt-4 text-black"
+                    >
                       Login
                     </button>
                   </fieldset>
@@ -47,5 +53,7 @@
         </div>
       </div>
     </main>
+
+    <script src="./js/login.js"></script>
   </body>
 </html>
