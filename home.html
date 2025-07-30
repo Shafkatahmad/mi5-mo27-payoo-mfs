@@ -47,15 +47,15 @@
           <div class="divider"></div>
           <!-- user action button -->
           <div class="flex justify-center gap-2">
-            <button class="btn btn-lg bg-white text-black p-4">
+            <button id="btn-show-add-money" class="btn btn-lg bg-white text-black p-4">
               Add Money
             </button>
-            <button class="btn btn-lg bg-white text-black p-4">Cash Out</button>
+            <button id="btn-show-cash-out" class="btn btn-lg bg-white text-black p-4">Cash Out</button>
           </div>
 
           <div class="divider"></div>
           <!-- add money strts -->
-           <div class="hidden card bg-base-100 w-9/12 max-w-sm shrink-0 shadow-2xl mx-auto">
+           <div id="add-money-form" class="card bg-base-100 w-9/12 max-w-sm shrink-0 shadow-2xl mx-auto">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-gray-700">Amount</label>
@@ -69,7 +69,7 @@
     <!-- add money ends -->
 
     <!-- cast out starts -->
-     <div class="card bg-base-100 w-9/12 max-w-sm shrink-0 shadow-2xl mx-auto">
+     <div id="cash-out-form" class="hidden card bg-base-100 w-9/12 max-w-sm shrink-0 shadow-2xl mx-auto">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-gray-700">Cash Out Amount</label>
@@ -86,5 +86,6 @@
 
     <script src="./js/home.js"></script>
     <script src="./js/cashOut.js"></script>
+    <script src="./js/features.js"></script>
   </body>
 </html>
