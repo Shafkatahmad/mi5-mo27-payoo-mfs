@@ -55,7 +55,7 @@
 
           <div class="divider"></div>
           <!-- add money strts -->
-           <div class="card bg-base-100 w-9/12 max-w-sm shrink-0 shadow-2xl mx-auto">
+           <div class="hidden card bg-base-100 w-9/12 max-w-sm shrink-0 shadow-2xl mx-auto">
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-gray-700">Amount</label>
@@ -65,11 +65,26 @@
           <button id="btn-add-money" class="btn btn-neutral mt-4 bg-purple-500">Add Money</button>
         </fieldset>
       </div>
-          <!-- add money ends -->
-        </div>
+    </div>
+    <!-- add money ends -->
+
+    <!-- cast out starts -->
+     <div class="card bg-base-100 w-9/12 max-w-sm shrink-0 shadow-2xl mx-auto">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-gray-700">Cash Out Amount</label>
+          <input id="input-cash-out" type="text" class="input border-2 border-gray-300 text-black" placeholder="Amount" />
+          <label class="label text-gray-700">Pin</label>
+          <input id="input-cash-out-pin" type="password" class="input border-2 border-gray-300 text-black" autocomplete="off" placeholder="Pin Number" />
+          <button id="btn-cash-out" class="btn btn-neutral mt-4 bg-purple-500">Cash Out</button>
+        </fieldset>
+      </div>
+    </div>
+    <!-- cast out ends -->
       </div>
     </main>
 
     <script src="./js/home.js"></script>
+    <script src="./js/cashOut.js"></script>
   </body>
 </html>
