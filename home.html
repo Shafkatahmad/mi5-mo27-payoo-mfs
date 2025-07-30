@@ -4,8 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <h1>Welcome to Home Page</h1>
+    <main class="flex justify-center">
+      <!-- <div class="mockup-phone bg-gray-200">
+        <div class="mockup-phone-camera"></div>
+        <div class="mockup-phone-display text-white grid place-content-center">
+          available balance
+          <div>
+            <div class="stats shadow bg-white">
+              <div class="stat">
+                <div class="stat-value text-black">89,400</div>
+                <div class="stat-desc">Available Balance</div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+        </div>
+      </div> -->
+      <div
+        class="bg-gray-200 w-1/4 h-svh rounded-[70px] flex flex-col justify-start"
+      >
+        <div
+          class="w-1/4 rounded-[70px] h-10 bg-black mt-5 ml-[150px] border-2 border-red-500"
+        ></div>
+        <div class="text-white">
+          <!-- available balance -->
+          <div class="w-fit">
+            <div class="w-fit ml-[120px] mt-5">
+              <div class="bg-white p-5 rounded-3xl border-2 border-red-500">
+                <div class="text-black font-bold text-3xl">9400</div>
+                <div class="text-gray-500 text-sm">Available Balance</div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <!-- user action button -->
+          <div class="flex justify-center gap-2">
+            <button class="btn btn-lg bg-white text-black p-4">
+              Add Money
+            </button>
+            <button class="btn btn-lg bg-white text-black p-4">Cash Out</button>
+          </div>
+
+          <div class="divider"></div>
+          <!-- add money strts -->
+           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-gray-700">Amount</label>
+          <input type="text" class="input border-2 border-gray-300" placeholder="Amount" />
+          <label class="label text-gray-700">Pin</label>
+          <input type="password" class="input border-2 border-gray-300" autocomplete="off" placeholder="Pin" />
+          <button class="btn btn-neutral mt-4 bg-purple-500">Add Money</button>
+        </fieldset>
+      </div>
+          <!-- add money ends -->
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/home.js"></script>
   </body>
 </html>
